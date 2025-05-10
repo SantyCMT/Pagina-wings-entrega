@@ -3,14 +3,28 @@ body {
     font-weight: bold;
     margin: 0;
     padding: 0;
-
 }
 
 
 header {
     text-align: center;
-
 }
+
+
+
+
+
+
+.banner-send-free {
+    background-color: #000000;
+    color: white;
+    font-size: 16px; 
+    text-align: center;
+    padding: 2px 0;
+    font-weight: bold;
+    width: 100%;
+}
+
 
 .banner-send-free {
     background-color: #000000;
@@ -25,13 +39,81 @@ header {
 
 
 
-.img-tittle {
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%; 
+    padding: 10px 15px; 
+    box-sizing: border-box; 
+}
+
+.barra-superior a {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+}
+
+.user-ico,
+.location-ico{
+    width: 25px; 
+    height: 25px; 
+    margin-right: 5px; 
+}
+
+.barra-superior-izquierda,
+.barra-superior-derecha {
+    display: flex; 
+    align-items: center;
+    gap: 8px; 
+    font-size: small;
+}
+
+.contenedor-logo {
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+.logo-wings {
     width: 30%;
     height: 30%;
     object-fit: cover;
     position: relative;
-    padding: 40px 0 60px 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+
+
+
+.icons-super{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.iconos-derecha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    padding: 0 40px;
+}
+
+.like-ico,
+.search-ico,
+.cart-ico {
+
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
 
 .navbar {
     position: relative;
@@ -83,8 +165,8 @@ header {
     padding: 15px;
     z-index: 1;
     top: 100%;
-    left: -9rem;
-    margin-top: 5px;
+    left: -6rem;
+    margin-top: 2px;
 }
 
 .shoop-nav:hover .shoop-nav-content,
@@ -272,8 +354,15 @@ header {
 
 .Category-card {
     background: rgba(255, 255, 255, 0.158);
-    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.Category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 26px 26px #A3BEB7;
+    background: rgba(255, 255, 255, 0.5);
+}
+
 
 .Category-image {
     position: relative;
@@ -303,4 +392,19 @@ header {
     padding: 10px 20px;
     border-radius: 35px;
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #A3BEB7;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
 }
