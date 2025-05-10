@@ -44,7 +44,7 @@ header {
     justify-content: space-between;
     align-items: center; 
     width: 100%; 
-    padding: 10px 15px; 
+    padding: 10px 80px; 
     box-sizing: border-box; 
 }
 
@@ -71,7 +71,6 @@ header {
 
 .contenedor-logo {
     text-align: center; 
-    padding: 20px 0; 
 }
 
 .logo-wings {
@@ -116,13 +115,67 @@ header {
 
 
 .navbar {
-    position: relative;
-    background: rgba(237, 237, 237, 1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.7); 
     backdrop-filter: blur(.625rem);
-    color: black;
-    padding: 15px 0 15px;
 
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease;
 }
+
+.navbar > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0; /* Padding vertical para la navbar */
+}
+
+.navbar a,
+.shoop-nav-btn,
+.login-nav-btn { /* Estilos comunes para enlaces y botones en la navbar */
+    color: black; 
+    text-decoration: none;
+    padding: 10px 20px; /* Aumenté el padding horizontal para más espacio */
+    font-size: 1.1rem; /* Ajusta según preferencia */
+    transition: color 0.3s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: transparent; /* Importante para que se vea el blur */
+    border: none; /* Para los botones */
+}
+
+.navbar a:hover,
+.shoop-nav-btn:hover,
+.login-nav-btn:hover {
+    color: #A3BEB7; /* Tu color de acento para el hover */
+}
+
+/* Estilos para los menús desplegables (shopp-nav, login-nav) */
+.shoop-nav-content,
+.login-nav-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo con ligera transparencia */
+    backdrop-filter: blur(5px); /* Desenfoque también para el desplegable */
+    -webkit-backdrop-filter: blur(5px);
+    min-width: 250px;
+    border: 1px solid rgba(221, 221, 221, 0.7); /* Borde más sutil */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra más pronunciada */
+    padding: 20px; /* Más padding interno */
+    z-index: 1001; /* Por encima de la navbar principal */
+    top: 100%; /* Se posiciona debajo del botón */
+    left: 50%; /* Centrar el desplegable */
+    transform: translateX(-50%); /* Ajuste fino para centrar */
+    margin-top: 5px; /* Pequeño espacio entre el botón y el desplegable */
+    border-radius: 6px; /* Bordes redondeados */
+}
+
 
 .navbar .scrolled{
     position: fixed; 
@@ -138,12 +191,14 @@ header {
     font-weight: bold;
 }
 
-.shoop-nav {
+.shoop-nav,
+.login-nav {
     position: relative;
     display: inline-block;
 }
 
-.shoop-nav-btn {
+.shoop-nav-btn,
+.login-nav-btn {
     border: none;
     background-color: transparent;
     color: black;
@@ -155,26 +210,21 @@ header {
     font-weight: bold;
 }
 
-.shoop-nav-content {
-    display: none;
-    position: absolute;
-    background: white;
-    min-width: 250px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 15px;
-    z-index: 1;
-    top: 100%;
-    left: -6rem;
-    margin-top: 2px;
-}
+
+
+
+
+
 
 .shoop-nav:hover .shoop-nav-content,
-.shoop-nav:focus-within .shoop-nav-content {
+.shoop-nav:focus-within .shoop-nav-content,
+.login-nav:hover .login-nav-content,
+.login-nav:focus-within .login-nav-content {
     display: block;
 }
 
-.shoop-inputs {
+.shoop-inputs,
+.login-inputs {
     display: grid;
     grid-template-columns: repeat(1, 4fr);
     gap: 2px;
@@ -182,15 +232,17 @@ header {
 
 }
 
-.shoop-inputs input {
+.shoop-inputs input,
+.login-inputs input {
     width: 300px;
     padding: 1px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
-.shoop-inputs button {
-    background: #fcd6e0;
+.shoop-inputs button,
+.login-inputs button {
+    background: #A3BEB7;
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
@@ -229,6 +281,7 @@ header {
     text-align: center;
     margin: 10px 0;
     font-size: 1.5rem;
+    padding: 20px;
 }
 .presentation h2 {
     font-size: 1.75rem;
@@ -402,9 +455,144 @@ header {
 
 
 
-footer {
-    background-color: #A3BEB7;
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
+.site-footer {
+    background-color: #f8f8f8; /* Un gris muy claro, o el color de fondo de tu web si es oscuro */
+    color: #333; /* Color de texto principal, ajustar si el fondo es oscuro */
+    padding: 60px 0 20px 0; /* Espaciado superior/inferior generoso */
+    font-family: 'Arial', sans-serif; /* O la fuente sans-serif que estés usando */
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Para que se adapte en mobile */
+    justify-content: space-around; /* Distribuye las secciones */
+    max-width: 1200px; /* O el ancho máximo de tu contenido */
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px; /* Espacio entre secciones */
+}
+
+.footer-section {
+    flex: 1; /* Intenta que las secciones ocupen un espacio similar */
+    min-width: 200px; /* Ancho mínimo antes de que se envuelvan */
+    margin-bottom: 30px;
+}
+
+.footer-logo-social {
+    flex-basis: 100%; /* Que ocupe todo el ancho en mobile antes de centrarse */
+    text-align: center; /* Centrar logo y redes en mobile */
+}
+
+@media (min-width: 768px) {
+    .footer-logo-social {
+        flex-basis: auto; /* Vuelve a su comportamiento normal en desktop */
+        text-align: left; /* Alinear a la izquierda en desktop */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinear logo e iconos sociales a la izquierda */
+    }
+}
+
+
+.footer-logo {
+    max-width: 150px; /* Ajusta el tamaño de tu logo */
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin-top: 15px; /* Si el logo está arriba */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px; /* Espacio entre iconos sociales */
+}
+
+.social-icons img {
+    width: 24px; /* Tamaño de los iconos sociales */
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover img {
+    opacity: 1;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222; /* Un poco más oscuro para los títulos */
+    font-family: 'Georgia', serif; /* O la fuente serif de tu logo "WINGS" para consistencia */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #555; /* Color de los enlaces */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff; /* Un color de acento o el principal de tu marca */
+    text-decoration: underline;
+}
+
+.footer-newsletter p {
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+    min-width: 0; /* Para evitar problemas de overflow en flex */
+}
+
+.newsletter-form button {
+    padding: 10px 15px;
+    background-color: #333; /* Color del botón, puede ser el color de tu marca */
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #555; /* Color del botón al hacer hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e0e0e0; /* Una línea sutil de separación */
+    font-size: 13px;
+    color: #777;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
 }
