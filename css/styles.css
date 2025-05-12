@@ -133,47 +133,47 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0; /* Padding vertical para la navbar */
+    padding: 10px 0;
 }
 
 .navbar a,
 .shoop-nav-btn,
-.login-nav-btn { /* Estilos comunes para enlaces y botones en la navbar */
+.login-nav-btn { 
     color: black; 
     text-decoration: none;
-    padding: 10px 20px; /* Aumenté el padding horizontal para más espacio */
-    font-size: 1.1rem; /* Ajusta según preferencia */
+    padding: 10px 20px; 
+    font-size: 1.1rem; 
     transition: color 0.3s;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    background-color: transparent; /* Importante para que se vea el blur */
-    border: none; /* Para los botones */
+    background-color: transparent; 
+    border: none; 
 }
 
 .navbar a:hover,
 .shoop-nav-btn:hover,
 .login-nav-btn:hover {
-    color: #A3BEB7; /* Tu color de acento para el hover */
+    color: #A3BEB7; 
 }
 
-/* Estilos para los menús desplegables (shopp-nav, login-nav) */
+
 .shoop-nav-content,
 .login-nav-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo con ligera transparencia */
-    backdrop-filter: blur(5px); /* Desenfoque también para el desplegable */
+    background-color: rgba(255, 255, 255, 0.9); 
+    backdrop-filter: blur(5px); 
     -webkit-backdrop-filter: blur(5px);
     min-width: 250px;
-    border: 1px solid rgba(221, 221, 221, 0.7); /* Borde más sutil */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra más pronunciada */
-    padding: 20px; /* Más padding interno */
-    z-index: 1001; /* Por encima de la navbar principal */
-    top: 100%; /* Se posiciona debajo del botón */
-    left: 50%; /* Centrar el desplegable */
-    transform: translateX(-50%); /* Ajuste fino para centrar */
-    margin-top: 5px; /* Pequeño espacio entre el botón y el desplegable */
-    border-radius: 6px; /* Bordes redondeados */
+    border: 1px solid rgba(221, 221, 221, 0.7); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    padding: 20px; 
+    z-index: 1001; 
+    top: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin-top: 5px; 
+    border-radius: 6px; 
 }
 
 
@@ -316,6 +316,8 @@ header {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+
+
 .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 16px 16px #A3BEB7;
@@ -456,62 +458,62 @@ header {
 
 
 .site-footer {
-    background-color: #f8f8f8; /* Un gris muy claro, o el color de fondo de tu web si es oscuro */
-    color: #333; /* Color de texto principal, ajustar si el fondo es oscuro */
-    padding: 60px 0 20px 0; /* Espaciado superior/inferior generoso */
-    font-family: 'Arial', sans-serif; /* O la fuente sans-serif que estés usando */
+    background-color: #f8f8f8; 
+    color: #333; 
+    padding: 60px 0 20px 0;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     line-height: 1.6;
 }
 
 .footer-container {
     display: flex;
-    flex-wrap: wrap; /* Para que se adapte en mobile */
-    justify-content: space-around; /* Distribuye las secciones */
-    max-width: 1200px; /* O el ancho máximo de tu contenido */
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    gap: 30px; /* Espacio entre secciones */
+    gap: 30px;
 }
 
 .footer-section {
-    flex: 1; /* Intenta que las secciones ocupen un espacio similar */
-    min-width: 200px; /* Ancho mínimo antes de que se envuelvan */
+    flex: 1; 
+    min-width: 200px; 
     margin-bottom: 30px;
 }
 
 .footer-logo-social {
-    flex-basis: 100%; /* Que ocupe todo el ancho en mobile antes de centrarse */
-    text-align: center; /* Centrar logo y redes en mobile */
+    flex-basis: 100%; 
+    text-align: center;
 }
 
 @media (min-width: 768px) {
     .footer-logo-social {
-        flex-basis: auto; /* Vuelve a su comportamiento normal en desktop */
-        text-align: left; /* Alinear a la izquierda en desktop */
+        flex-basis: auto; 
+        text-align: left; 
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Alinear logo e iconos sociales a la izquierda */
+        align-items: flex-start;
     }
 }
 
 
 .footer-logo {
-    max-width: 150px; /* Ajusta el tamaño de tu logo */
+    max-width: 150px; 
     margin-bottom: 20px;
 }
 
 .social-icons {
-    margin-top: 15px; /* Si el logo está arriba */
+    margin-top: 15px; 
 }
 
 .social-icons a {
     display: inline-block;
-    margin-right: 15px; /* Espacio entre iconos sociales */
+    margin-right: 15px; 
 }
 
 .social-icons img {
-    width: 24px; /* Tamaño de los iconos sociales */
+    width: 24px; 
     height: 24px;
     opacity: 0.7;
     transition: opacity 0.3s ease;
@@ -525,8 +527,8 @@ header {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #222; /* Un poco más oscuro para los títulos */
-    font-family: 'Georgia', serif; /* O la fuente serif de tu logo "WINGS" para consistencia */
+    color: #222; 
+    font-family: 'Georgia', serif; 
 }
 
 .footer-section ul {
@@ -540,13 +542,13 @@ header {
 }
 
 .footer-section ul li a {
-    color: #555; /* Color de los enlaces */
+    color: #555; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    color: #007bff; /* Un color de acento o el principal de tu marca */
+    color: #007bff; 
     text-decoration: underline;
 }
 
@@ -566,12 +568,12 @@ header {
     border: 1px solid #ddd;
     border-radius: 4px 0 0 4px;
     font-size: 14px;
-    min-width: 0; /* Para evitar problemas de overflow en flex */
+    min-width: 0; 
 }
 
 .newsletter-form button {
     padding: 10px 15px;
-    background-color: #333; /* Color del botón, puede ser el color de tu marca */
+    background-color: #333; 
     color: white;
     border: none;
     border-radius: 0 4px 4px 0;
@@ -581,18 +583,138 @@ header {
 }
 
 .newsletter-form button:hover {
-    background-color: #555; /* Color del botón al hacer hover */
+    background-color: #555; 
 }
 
 .footer-bottom {
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
-    border-top: 1px solid #e0e0e0; /* Una línea sutil de separación */
+    border-top: 1px solid #e0e0e0; 
     font-size: 13px;
     color: #777;
 }
 
 .footer-bottom p {
     margin: 5px 0;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .barra-superior {
+        padding: 10px 20px; 
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    .barra-superior-derecha {
+        margin-top: 10px; 
+    }
+    .contenedor-logo .logo-wings {
+        width: 50%; 
+    }
+    .iconos-derecha {
+        padding: 0 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar > div {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .navbar a, .shoop-nav-btn, .login-nav-btn {
+        padding: 10px; 
+        font-size: 1rem; 
+        width: 100%; 
+        text-align: center; 
+    }
+    .shoop-nav-content, .login-nav-content {
+        position: static; 
+        transform: none;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        margin-top: 0;
+        background-color: #f8f8f8;
+    }
+    .shoop-inputs input, .login-inputs input {
+        width: 90%; 
+        margin: 5px auto; 
+    }
+}
+
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        padding: 2rem 1rem; 
+    }
+}
+
+@media (max-width: 600px) {
+    .Category-grid {
+        grid-template-columns: 1fr; 
+        padding: 2rem 1rem; 
+    }
+    .Category-image img {
+        height: auto; 
+        max-height: 400px; 
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+    .footer-section {
+        min-width: 100%; 
+        align-items: center;
+    }
+    .footer-section ul {
+        text-align: center; 
+    }
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .newsletter-form input[type="email"] {
+        border-radius: 4px;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    .newsletter-form button {
+        border-radius: 4px;
+        width: 50%; 
+    }
+    
+    .footer-logo-social {
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .presentation h2 {
+        font-size: 1.5rem;
+    }
+    .presentation p {
+        font-size: 1rem;
+    }
+    .product-info h3, .Category-info h3 {
+        font-size: 1.1rem;
+    }
+    .price {
+        font-size: 1.2rem;
+    }
 }
