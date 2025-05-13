@@ -153,7 +153,7 @@ header {
 .navbar a:hover,
 .shoop-nav-btn:hover,
 .login-nav-btn:hover {
-    color: #A3BEB7; 
+    color: #F3ACA6; 
 }
 
 
@@ -242,7 +242,7 @@ header {
 
 .shoop-inputs button,
 .login-inputs button {
-    background: #A3BEB7;
+    background: #F3ACA6;
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
@@ -320,7 +320,7 @@ header {
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 16px 16px #A3BEB7;
+    box-shadow: 0 16px 16px #F3ACA6;
 }
 
 .product-image {
@@ -353,8 +353,8 @@ header {
 }
 
 
-.buy-btn {
-    background: #A3BEB7;
+.buy-btn, .form-contact-button {
+    background: #F3ACA6;
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
@@ -414,7 +414,7 @@ header {
 
 .Category-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 26px 26px #A3BEB7;
+    box-shadow: 0 26px 26px #F3ACA6;
     background: rgba(255, 255, 255, 0.5);
 }
 
@@ -487,15 +487,7 @@ header {
     text-align: center;
 }
 
-@media (min-width: 768px) {
-    .footer-logo-social {
-        flex-basis: auto; 
-        text-align: left; 
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
+
 
 
 .footer-logo {
@@ -604,6 +596,70 @@ header {
 
 
 
+.form-contact{
+    background: white; border-radius: 20px;
+    box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    text-align: center;
+}
+.form-contact input{
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    margin-top: 2px;
+    background: white; border-radius: 20px;
+    box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+}
+
+
+.form-contact-inset{
+    background: white; border-radius: 20px;
+    box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+}
+
+
+.form-group{
+    margin-bottom: 15px
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.textarea-contact {
+    background: white; border-radius: 20px;
+    box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+    width: 100%; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .footer-logo-social {
+        flex-basis: auto; 
+        text-align: left; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 @media (max-width: 768px) {
     .barra-superior {
         padding: 10px 20px; 
@@ -626,7 +682,7 @@ header {
         flex-direction: column; 
         align-items: center; 
     }
-    .navbar a, .shoop-nav-btn, .login-nav-btn {
+    .navbar a, .shoop-nav-btn, .login-nav-btn, .form-contact-button {
         padding: 10px; 
         font-size: 1rem; 
         width: 100%; 
