@@ -1,0 +1,18 @@
+
+
+.buy-btn, .form-contact-button {
+    background: #F3ACA6;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    font-weight: bold;
+}
+
+.buy-btn:hover {
+    background: #26af5f;
+    color: white;
+}

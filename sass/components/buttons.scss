@@ -1,0 +1,21 @@
+@import "../utilities/colors";
+
+
+
+
+.buy-btn, .form-contact-button {
+    background: $color-primary;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    font-weight: bold;
+}
+
+.buy-btn:hover {
+    background: $color-buy;
+    color: white;
+}

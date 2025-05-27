@@ -1,0 +1,122 @@
+.presentation{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.presentation h2 {
+    font-size: 1.75rem;
+    color: #000000;
+}
+.presentation p {
+    font-size: 1.125rem;
+    color: #000000;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    text-align: center;
+}
+
+
+
+
+
+
+.banner-send-free {
+    background-color: #000000;
+    color: white;
+    font-size: 16px; 
+    text-align: center;
+    padding: 2px 0;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+.banner-send-free {
+    background-color: #000000;
+    color: white;
+    font-size: 16px; 
+    text-align: center;
+    padding: 2px 0;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+
+
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%; 
+    padding: 10px 80px; 
+    box-sizing: border-box; 
+}
+
+.barra-superior a {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+}
+
+.user-ico,
+.location-ico{
+    width: 25px; 
+    height: 25px; 
+    margin-right: 5px; 
+}
+
+.barra-superior-izquierda,
+.barra-superior-derecha {
+    display: flex; 
+    align-items: center;
+    gap: 8px; 
+    font-size: small;
+}
+
+.contenedor-logo {
+    text-align: center; 
+}
+
+.logo-wings {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.icons-super{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.iconos-derecha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    padding: 0 40px;
+}
+
+.like-ico,
+.search-ico,
+.cart-ico {
+
+    width: 25px;
+    height: 25px;
+}
