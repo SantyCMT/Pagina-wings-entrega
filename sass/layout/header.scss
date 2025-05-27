@@ -3,15 +3,17 @@
     margin: 10px 0;
     font-size: 1.5rem;
     padding: 20px;
+
+    h2 {
+        font-size: 1.75rem;
+        color: #000000;
+    }
+    p {
+        font-size: 1.125rem;
+        color: #000000;
+    }
 }
-.presentation h2 {
-    font-size: 1.75rem;
-    color: #000000;
-}
-.presentation p {
-    font-size: 1.125rem;
-    color: #000000;
-}
+
 
 
 body {
@@ -42,18 +44,6 @@ header {
 }
 
 
-.banner-send-free {
-    background-color: #000000;
-    color: white;
-    font-size: 16px; 
-    text-align: center;
-    padding: 2px 0;
-    font-weight: bold;
-    width: 100%;
-}
-
-
-
 
 .barra-superior {
     display: flex;
@@ -62,13 +52,14 @@ header {
     width: 100%; 
     padding: 10px 80px; 
     box-sizing: border-box; 
+    a {
+        text-decoration: none; 
+        color: black; 
+        font-weight: bold; 
+    }
 }
 
-.barra-superior a {
-    text-decoration: none; 
-    color: black; 
-    font-weight: bold; 
-}
+
 
 .user-ico,
 .location-ico{

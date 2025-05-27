@@ -10,9 +10,22 @@
     transition: background 0.3s;
     width: 100%;
     font-weight: bold;
+
+    .buy-btn:hover {
+        background: #26af5f;
+        color: white;
+    }
 }
 
-.buy-btn:hover {
-    background: #26af5f;
-    color: white;
+
+
+.Category-btn {
+    background: #fcd6e000;
+    background-blend-mode: lighten;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    cursor: pointer;
 }
