@@ -1,13 +1,15 @@
-@use "utilities/variables";
-@use "utilities/typography";
-@use "utilities/colors";
+@import "utilities/variables";
+@import "utilities/typography";
+@import "utilities/colors";
+@import "utilities/cards";
+@import "utilities/category-card";
+
+@import "base/reset";
 
 
 
-@use "components/buttons";
-@use "components/cards";
 @import "components/nav-bar";
-
+@import "components/buttons";
 
 @import "layout/header";
 @import "layout/footer";
