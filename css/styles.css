@@ -619,7 +619,7 @@ header {
   margin-bottom: 15px label;
   margin-bottom-display: block;
   margin-bottom-margin-bottom: 5px;
-  margin-bottom-color: #555;
+  margin-bottom-color: rgba(85, 85, 85, 0.0196078431);
   margin-bottom-font-weight: bold;
 }
 
@@ -642,17 +642,17 @@ header {
   margin-top: 2px;
   background: white;
   border-radius: 20px;
-  box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+  box-shadow: inset 10px 10px 20px rgba(163, 177, 198, 0.2862745098), inset -10px -10px 20px #ffffff;
 }
 .form-contact .form-contact-inset {
   background: white;
   border-radius: 20px;
-  box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+  box-shadow: inset 10px 10px 20px rgba(163, 177, 198, 0.2862745098), inset -10px -10px 20px #ffffff;
 }
 .form-contact .textarea-contact {
   background: white;
   border-radius: 20px;
-  box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+  box-shadow: inset 10px 10px 20px rgba(163, 177, 198, 0.2862745098), inset -10px -10px 20px #ffffff;
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 4px;
