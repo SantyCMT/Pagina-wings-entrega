@@ -7,6 +7,17 @@
   margin: 0 auto;
   justify-content: center;
   padding: 3.125rem 1.25rem 3.125rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .product-card {
@@ -436,6 +447,49 @@ header {
   height: 25px;
 }
 
+.image-about-us-woman {
+  width: 60vh;
+  height: 60vh;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  border-radius: 10%;
+  display: block;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.about-us-text {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.125rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .about-us-container {
+    flex-direction: column;
+    min-height: unset;
+  }
+  .image-about-us-woman {
+    width: 40vh;
+    height: 40vh;
+  }
+}
 .site-footer {
   background-color: #f8f8f8;
   color: #333;
@@ -452,6 +506,13 @@ header {
   margin: 0 auto;
   padding: 0 20px;
   gap: 30px;
+}
+@media (max-width: 800px) {
+  .site-footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
 .site-footer .footer-section {
   flex: 1;
@@ -488,6 +549,13 @@ header {
 .site-footer .footer-section ul li a:hover {
   color: #007bff;
   text-decoration: underline;
+}
+@media (max-width: 800px) {
+  .site-footer .footer-section {
+    min-width: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .footer-logo-social {
